@@ -1,0 +1,205 @@
+/* DESIGN SYSTEM
+
+///////////////////////////
+1) TYPOGRAPHY
+
+- Font Family: "Trebuchet MS"
+
+- Font Size (px):
+10, 12 , 14, 16, 18, 20, 24, 30, 36, 44, 
+small
+normal
+medium
+large
+X large
+XX large
+
+- Font Weight
+normal: 400
+medium: 500
+semi-bold: 600
+bold: 700
+
+- Line Height
+
+
+- Letter Spacing
+
+
+
+///////////////////////////
+2) COLORS
+
+- Primary :
+
+- Tints 
+
+- Shades
+
+- Accent
+
+- Grays
+
+
+///////////////////////////
+3) IMAGES
+
+
+///////////////////////////
+4) ICONS
+
+
+///////////////////////////
+5) SHADOWS
+
+
+///////////////////////////
+6) BORDER-RADIUS
+
+
+///////////////////////////
+7) WHITESPACE (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* /////////////////////////// */
+/* GENERAL */
+
+:root {
+  --primary-color: #353d54;
+  --main-bg-color: #c5cad6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", "Trebuchet MS", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--primary-color);
+  background-color: var(--main-bg-color);
+}
+
+/* /////////////////////////// */
+/* Header */
+
+header {
+  color: var(--primary-color);
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+.main-nav-list {
+  list-style: none;
+
+  display: flex;
+  gap: 2.4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.main-nav-link:active,
+.main-nav-link:hover {
+  transform: scale(1.01);
+}
+
+/* /////////////////////////// */
+/* HERO SECTION */
+
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.motto {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.hero {
+  display: grid;
+  max-width: 130rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 9.6rem;
+  padding: 0 9.6rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-bottom: 3.6rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #c5cad6;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.2rem 3.6rem;
+}
+
+/* /////////////////////////// */
+/* PROJECTS SECTION */
+
+.section-projects {
+  padding: 0 9.6rem;
+  position: relative;
+}
+
+.separator {
+  width: 60%;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
