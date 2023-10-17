@@ -140,28 +140,30 @@ header {
   font-size: 3rem;
   line-height: 1.1;
   text-align: center;
-  margin-bottom: 4.8rem;
+  margin-bottom: 8rem;
 }
 
 .hero {
-  display: grid;
   max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 9.6rem;
   padding: 0 9.6rem;
-  margin: 0 auto;
   align-items: center;
 }
 
 .hero-img {
-  width: 100%;
+  width: 95%;
 }
 
 .heading-primary {
-  font-size: 3.6rem;
-  line-height: 1.1;
+  font-size: 4.4rem;
+  font-weight: 600;
+  /* line-height: 1.1; */
+  letter-spacing: -0.5px;
   text-transform: capitalize;
-  margin-bottom: 3.6rem;
+  margin-bottom: 3.2rem;
 }
 
 .hero-description {
@@ -172,21 +174,30 @@ header {
 
 .btn:link,
 .btn:visited {
+  display: inline-block;
   text-decoration: none;
-  background-color: var(--primary-color);
-  color: #c5cad6;
-  font-size: 2.4rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  display: inline-block;
-  padding: 1.2rem 3.6rem;
+  padding: 0.8rem 2.4rem;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--primary-color);
+  color: var(--main-bg-color);
 }
 
 /* /////////////////////////// */
 /* PROJECTS SECTION */
 
 .section-projects {
-  padding: 0 9.6rem;
+  margin: 9.6rem 0;
+  padding: 0 9.6rem 9.6rem 9.6rem;
   position: relative;
 }
 
@@ -201,5 +212,65 @@ header {
 
 .heading-secondary {
   font-size: 3rem;
-  text-transform: uppercase;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: absolute;
+  top: 2rem;
+  right: 60%;
+  transform: translateX(100%);
 }
+
+.projects {
+  width: 60%;
+  height: auto;
+  position: relative;
+  padding-bottom: 12.8rem;
+
+  top: 12.8rem;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.project-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4.8rem;
+
+  position: relative;
+}
+.project-img {
+  width: 100%;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.project-category {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.project-subtitle {
+  font-size: 1.8rem;
+}
+
+.technologies {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem 0;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.tech-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* /////////////////////////// */
+/* PROCESS SECTION */
